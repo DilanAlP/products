@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width= device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/master.css">
+    <title>Calculadora</title>
+  </head>
+  <body>
+    <div class="container">
+      <label>CALCULA EL PRECIO DE TU PRODUCTO</label>
+      <div class="box box-pad" id="box">
+        <div class="data" id="data">
+          <input type="text" name="ingrediente" id="ingrediente" placeholder="INGREDIENTE">
+          <input type="number" name="unidades" id="unidades" placeholder="CANTIDAD DE INGR.">
+          <input type="number" name="precio" id="precio" placeholder="COSTO DE INGR.">
+          <label for="precio" id='resultado'>PRECIO</label>
+        </div>
+
+
+      </div>
+      <div class="btn">
+      <button type="submit" name="add" id="add">+</button>
+      <button type="submit" name="rest" id="rest">-</button>
+      </div>
+
+      <button type="submit" name="btncal" id="calcular">CALCULAR</button>
+      <button type="submit" name="btprint" id="print">IMPRIMIR</button>
+    </div>
+    <script src="code/code.js"></script>
+  </body>
+</html>
