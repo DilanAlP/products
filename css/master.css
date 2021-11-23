@@ -9,7 +9,7 @@ body {
   margin: 0;
   width: 100vw;
   height: 100vh;
-  background: #72CAAF;
+  background: #323845;
   display: flex;
   align-items: center;
   text-align: center;
@@ -25,23 +25,27 @@ a {
 }
 
 .container{
-
   width: 950px;
   border-radius: 20px;
   padding: 40px;
   box-sizing: border-box;
-  background: #72CAAF;
-  box-shadow: 14px 14px 20px #468270, -14px -14px 20px #93d1be;
+  background: #323845;
+  box-shadow: 14px 14px 20px #1c1f26, -14px -14px 20px #3d4456;
 
+}
+
+.container label{
+  color: #fff;
 }
 .box-pad{
   justify-content: center;
   padding: 15px 0 15px ;
 }
 .box{
-  background: #72CAAF;
+  background: #323845;
 }
 .box label{
+
   margin: 0 30px;
 }
 
@@ -50,7 +54,7 @@ input::placeholder {
 }
 
 input {
-  background: #72CAAF;
+  background: #323845;
   margin-left: 15px;
   padding-left: 20px;
   height: 50px;
@@ -59,7 +63,7 @@ input {
   border-radius: 50px;
   border: none;
   outline: none;
-  box-shadow: inset 6px 6px 6px #93d1be, inset -6px -6px 6px #468270;
+  box-shadow: inset 6px 6px 6px #1c1f26, inset -6px -6px 6px #3d4456;
 }
 
 input[type=number]::-webkit-inner-spin-button,
@@ -75,16 +79,19 @@ input[type=number]::-webkit-outer-spin-button {
 button {
   margin: 6px;
   margin-top: 20px;
-  background: #72CAAF;
+  background: #323845;
   width: 150px;
   height: 50px;
   border-radius: 20px;
   cursor: pointer;
   border: none;
   font-weight: 900;
-  box-shadow: 6px 6px 6px #2b5649, -12px -6px 6px #6db59f;
+  box-shadow: 6px 6px 6px #1c1f26, -12px -6px 6px #3d4456;
 }
  button:hover{
-   box-shadow: inset 4px 4px 10px -1px #6db59f,
-       inset -4px -4px 10px -1px #2b5649;
+    color: #fff;
+    background: rgb(24,50,255);
+    background: linear-gradient(90deg, rgba(24,50,255,1) 0%, rgba(96,47,224,0.6281863087031687) 47%, rgba(121,21,224,1) 100%);
+    box-shadow: inset 4px 4px 10px -1px #3d4456,
+       inset -4px -4px 10px -1px #1c1f26;
  }

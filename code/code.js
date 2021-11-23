@@ -1,3 +1,4 @@
+'use strict'
 (function(){
   //variables
   var name = document.getElementById('ingrediente'),
