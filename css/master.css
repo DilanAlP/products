@@ -55,6 +55,7 @@ input::placeholder {
 
 input {
   background: #323845;
+  color:#fff;
   margin-left: 15px;
   padding-left: 20px;
   height: 50px;
