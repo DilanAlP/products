@@ -6,6 +6,9 @@
     <link rel="stylesheet" href="css/master.css">
     <link rel="shortcut icon" href="plesi.png">
     <title>Calculadora</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.4.1/jspdf.debug.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/2.3.4/jspdf.plugin.autotable.min.js"></script>
   </head>
   <body>
     <div class="container">
@@ -23,12 +26,15 @@
       </div>
       <div class="btn">
       <button type="submit" name="add" id="add">+</button>
-      <button type="submit" name="rest" id="rest">-</button>
+      <button type="submit"  onclick="getPDF()" name="imprimir" id="imprimir">-</button>
+      <button id="getPDF" onclick="getPDF()">Download PDF</button>
       </div>
 
       <button type="submit" name="btncal" id="calcular">CALCULAR</button>
       <button type="submit" name="btprint" id="print">IMPRIMIR</button>
     </div>
     <script src="code/code.js"></script>
+    <script src="code/pdf.js"></script>
   </body>
+
 </html>

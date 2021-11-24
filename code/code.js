@@ -1,6 +1,8 @@
 'use strict'
 (function(){
   //variables
+  
+  import jsPDF from 'jspdf';
   var name = document.getElementById('ingrediente'),
   btncal = document.getElementById('calcular'),
   btnadd = document.getElementById('add'),
@@ -18,6 +20,11 @@
     }
 
     console.log(elem_precio)
+    var doc = new jsPDF();
+    doc.text(20, 20, 'Hola mundo!');
+    doc.text(20, 30, 'Esto es un generador de PDF en Java Script.');  
+    doc.addPage();
+    doc.text(20, 20, '¿Cómo estas?');
 
     //var u = Number(document.getElementById('unidades').value),
     //pr = Number(document.getElementById('precio').value);
@@ -28,6 +35,7 @@
 
    //document.getElementById('resultado').innerHTML = ("$"+suma);
   };
+
 
 
   var adddiv = function(){
@@ -86,3 +94,26 @@
   btnrem.addEventListener("click", remdiv )
 
 }());
+
+function getPDF() {
+  var doc = new jsPDF();
+ 
+  // We'll make our own renderer to skip this editor
+  var specialElementHandlers = {
+    '#getPDF': function(element, renderer){
+      return true;
+    },
+    '.controls': function(element, renderer){
+      return true;
+    }
+  };
+
+  // All units are in the set measurement for the document
+  // This can be changed to "pt" (points), "mm" (Default), "cm", "in"
+  doc.fromHTML($('.zima').get(0), 15, 15, {
+    'width': 170, 
+    'elementHandlers': specialElementHandlers
+  });
+
+  doc.save('Generated.pdf');
+}
