@@ -9,14 +9,24 @@
 
   //funciones
   var calcular = function(){
-    var u = Number(document.getElementById('unidades').value),
-    pr = Number(document.getElementById('precio').value);
+    var elem_unidades = document.getElementsByClassName('unidades')
+    var elem_precio = document.getElementsByClassName('precio')
+    var elem_resultado = document.getElementsByClassName('resultado')
 
-    var opr = (u/pr);
-    var por = opr *.5;
-    var suma = opr + por;
+    for (i=0;i<elem_precio.length;i++){
+      elem_resultado[i].innerHTML = ("$"+ elem_unidades[i].value *elem_precio[i].value);
+    }
 
-   document.getElementById('resultado').innerHTML = ("$"+suma);
+    console.log(elem_precio)
+
+    //var u = Number(document.getElementById('unidades').value),
+    //pr = Number(document.getElementById('precio').value);
+
+   // var opr = (u/pr);
+   // var por = opr *.5;
+   // var suma = opr + por;
+
+   //document.getElementById('resultado').innerHTML = ("$"+suma);
   };
 
 
@@ -44,16 +54,19 @@
     ingre.setAttribute("id","ingrediente");
     ingre.setAttribute("placeholder","INGREDIENTE");
     //unidades
+    uni.setAttribute("class","unidades")
     uni.setAttribute("type","number");
     uni.setAttribute("name","unidades");
     uni.setAttribute("id","uunidades");
     uni.setAttribute("placeholder","CANTIDAD DE INGR");
     //precio
+    pre.setAttribute("class","precio")
     pre.setAttribute("type","number");
     pre.setAttribute("name","precio");
     pre.setAttribute("id","precio");
     pre.setAttribute("placeholder","COSTO DE INGR");
     //resultado
+    resultado.setAttribute("class","resultado")
     resultado.setAttribute("for","precio");
     resultado.setAttribute("id","resultado");
     resultado.innerHTML = ("PRECIO");
@@ -61,9 +74,8 @@
 
 
   var remdiv = function(){
-    var box = document.getElementById("box");
-    var datadiv = document.getElementById("data");
-    var remove = box.removeChild(datadiv);
+    var divBox = document.getElementsByClassName("data");
+    divBox[divBox.length-1].remove();
 
   };
 //Eventos
