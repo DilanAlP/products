@@ -15,19 +15,17 @@
       <label>CALCULA EL PRECIO DE TU PRODUCTO</label><br>
       <div class="box box-pad" id="box">
         <input type="text" name="name" id="name" placeholder="NOMBRE DE PRODUCTO" style="font-size: .47em; margin:10px;">
+        <label for="total" class= "total" id='total'>TOTAL</label>
         <div class="data" id="data">
           <input type="text" class= "ingrediente" name="ingrediente" id="ingrediente" placeholder="INGREDIENTE">
           <input type="number" class= "unidades" name="unidades" id="unidades" placeholder="CANTIDAD DE INGR.">
           <input type="number" class= "precio" name="precio" id="precio" placeholder="COSTO DE INGR.">
           <label for="precio" class= "resultado" id='resultado'>PRECIO</label>
         </div>
-
-
       </div>
       <div class="btn">
       <button type="submit" name="add" id="add">+</button>
-      <button type="submit"  onclick="getPDF()" name="imprimir" id="imprimir">-</button>
-      <button id="getPDF" onclick="getPDF()">Download PDF</button>
+      <button type="submit"  name="rest" id="rest">-</button>
       </div>
 
       <button type="submit" name="btncal" id="calcular">CALCULAR</button>
@@ -35,10 +33,8 @@
     </div>
     <script src="code/code.js"></script>
     <script src="code/pdf.js"></script>
-<<<<<<< HEAD
     <script src="code/html2pdf.bundle.min.js"></script>
-=======
->>>>>>> d4ddde66875a8d5eadff708aca1a2d79ea6c2c0a
+
   </body>
 
 </html>
