@@ -12,6 +12,7 @@
         const $elementoParaConvertir = document.getElementById("box");; // <-- Aquí puedes elegir cualquier elemento del DOM
         html2pdf()
             .set({
+
                 margin: 1,
                 filename:  day + '_' + momnth + '_' + year + '_reporte_precio.pdf',
                 image: {
@@ -20,7 +21,7 @@
                 },
                 html2canvas: {
                     scale: 3, // A mayor escala, mejores gráficos, pero más peso
-                    letterRendering: true,
+                    letterRendering: true,                    
                 },
                 jsPDF: {
                     unit: "in",
