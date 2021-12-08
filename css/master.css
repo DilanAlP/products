@@ -23,7 +23,7 @@ body {
 
 
 .container{
-  width: 1100px;
+  width: 1270px;
   border-radius: 20px;
   padding: 40px;
   box-sizing: border-box;
@@ -102,16 +102,28 @@ button {
     box-shadow: inset 4px 4px 10px -1px #3d4456,
        inset -4px -4px 10px -1px #1c1f26;
  }
-/*
-span{
+
+ span{
+   font-size: 11px;
+ }
+ /*
+ .gra .gr{
+  position: relative;
+  z-index: 1;
+}
+.gra span{
   position:absolute;
-  top: 300px;
-  left: 230px;
-  width: 10%;
-  height: 10%;
-  background-color:#fe0000;
+  top: 329px;
+  left: 315px;
+  width: 100px;
+  height: 50px;
+  background:#fe0000;
+  border-radius: 80px;
+  transition: 0.5s;
 }
 
-.gr{
-  z-index: 1,;
+.gra .gr:checked ~ span{
+  background-color: chartreuse;
 }
+*/
+
