@@ -8,7 +8,6 @@
 body {
   margin: 0;
   width: 100vw;
-  height: 100vh;
   background: #323845;
   display: flex;
   align-items: center;
@@ -23,6 +22,8 @@ body {
 
 
 .container{
+  position: absolute;
+  top:164px;
   width: 1270px;
   border-radius: 20px;
   padding: 40px;
@@ -126,4 +127,13 @@ button {
   background-color: chartreuse;
 }
 */
-
+@media (max-width:415px) {
+  .container{
+    position: static;  
+  }
+  .data input{
+   margin-top: 9px; 
+  }
+  
+  
+}
